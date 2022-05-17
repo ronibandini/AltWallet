@@ -57,10 +57,10 @@ def output(data):
 
     if sys.argv[1]=="private":
         myFileName="privatekey.h"
-        myFirstLine="const char privkey [288] PROGMEM = { \n"
+        myFirstLine="const unsigned char privkey [288] = { \n"
     else:
         myFileName="publickey.h"
-        myFirstLine="const char pubkey [288] PROGMEM = { \n"
+        myFirstLine="const unsigned char pubkey [288] = { \n"
 
     with open(myFileName, 'w') as myFile:
 
