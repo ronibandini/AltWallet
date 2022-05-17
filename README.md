@@ -12,8 +12,12 @@ Demo https://www.youtube.com/watch?v=slu2VULd6mk
 
 Instructions https://wikimakes.com/
 
-Like the project? You are welcome to use the QR code for BTC donations. 
-
 Spanish info at https://bandini.medium.com/alt-oids-wallet-billetera-de-bitcoin-curiosamente-fuerte-f20d56cc21e4
 
+Like the project? You are welcome to use the QR code for BTC donations. Latest version will be sent to all donors. 
+
+Contact 
 Instagram https://www.instagram.com/ronibandini/
+Twitter https://twitter.com/RoniBandini
+
+
