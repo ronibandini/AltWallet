@@ -16,9 +16,7 @@ https://www.thingiverse.com/thing:5387126
 
 # Instructions 
 
-https://wikimakes.com/
-
-# Spanish info 
+https://www.hackster.io/roni-bandini/a-curiously-cold-bitcoin-wallet-bb86c9
 
 # Python Alt Loader script
 
@@ -26,11 +24,15 @@ This script requires a Raspberry Pi with Python 2.7
 
 Then you have to install dependencies
 
-sudo apt-get install python-pip
-sudo apt-get install python-picamera
-sudo pip install qrtools
-sudo apt-get install python-zbar
-sudo apt-get install python-pillow
+$ sudo apt-get install python-pip
+$ sudo apt-get install python-picamera
+$ sudo pip install qrtools
+$ sudo apt-get install python-zbar
+$ sudo apt-get install python-pillow
+
+Run 
+
+$ sudo python altLoader.py private (or public)
 
 # Arduino CLI for Raspberry
 
@@ -44,7 +46,7 @@ Create config file
 
 $ arduino-cli config init
 
-Connect the Altoids Wallet 
+Connect the Altoids Wallet with microUSB cable
 
 $ arduino-cli core update-index
 
@@ -56,7 +58,7 @@ Install Arduino Micro Board
 
 $ arduino-cli core install arduino:avr
 
-Adding library 
+Adding libraries 
 
 $ arduino-cli lib install "ButtonFever"
 $ arduino-cli lib install "Nokia 5110 LCD library"
