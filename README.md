@@ -32,6 +32,45 @@ sudo pip install qrtools
 sudo apt-get install python-zbar
 sudo apt-get install python-pillow
 
+# Arduino CLI for Raspberry
+
+If you are going to use the Alt Loader with a Raspberry PI
+
+Go to home, then run
+
+$ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+
+Create config file
+
+$ arduino-cli config init
+
+Connect the Altoids Wallet 
+
+$ arduino-cli core update-index
+
+Search the board
+
+$ arduino-cli board list
+
+Install missing board
+
+$ arduino-cli board listall
+
+Adding library 
+
+$ arduino-cli lib search <library>
+$ arduino-cli lib install <library>
+
+Compile 
+
+$ arduino-cli compile --fbqn <fbqn> <sketch>
+
+Flash 
+
+$ arduino-cli upload -p <port> --fqbn <fqbn> <sketch>
+
+# Spanish info
+
 https://bandini.medium.com/alt-oids-wallet-billetera-de-bitcoin-curiosamente-fuerte-f20d56cc21e4
 
 Like the project? You are welcome to use the QR code for BTC donations. Latest version will be sent to all donors. 
