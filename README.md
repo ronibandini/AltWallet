@@ -26,7 +26,7 @@ Then you have to install dependencies
 
 $ sudo apt-get install python-pip
 $ sudo apt-get install python-picamera
-$ sudo pip install qrtools
+$ sudo apt-get install python-qrtools
 $ sudo apt-get install python-zbar
 $ sudo apt-get install python-pillow
 
