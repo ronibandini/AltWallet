@@ -34,7 +34,7 @@ sudo apt-get install python-pillow
 
 # Arduino CLI for Raspberry
 
-If you are going to use the Alt Loader with a Raspberry PI
+Only required if you are going to use the Alt Loader with a Raspberry PI in command line mode. You can also use the Desktop IDE version (easier)
 
 Go to home, then run
 
@@ -52,22 +52,22 @@ Search the board
 
 $ arduino-cli board list
 
-Install missing board
+Install Arduino Micro Board
 
-$ arduino-cli board listall
+$ arduino-cli core install arduino:avr
 
 Adding library 
 
-$ arduino-cli lib search <library>
-$ arduino-cli lib install <library>
+$ arduino-cli lib install "ButtonFever"
+$ arduino-cli lib install "Nokia 5110 LCD library"
 
 Compile 
 
-$ arduino-cli compile --fbqn <fbqn> <sketch>
+$ arduino-cli compile --fbqn arduino:avr:micro wallet6 
 
 Flash 
 
-$ arduino-cli upload -p <port> --fqbn <fqbn> <sketch>
+$ arduino-cli upload -p /dev/ttyACM0 --fbqn arduino:avr:micro wallet6 -v
 
 # Spanish info
 
